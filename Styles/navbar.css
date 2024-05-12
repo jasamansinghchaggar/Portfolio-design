@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+.navbar {
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-sizing: border-box;
+    height: 10vh;
+    width: 60vw;
+    top: 0.5rem;
+    left: 20%;
+    position: fixed;
+    z-index: 100;
+    border-radius: 1.25rem;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo,
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar-logo {
+    justify-content: start;
+    margin: 0 1rem;
+    font-family: var(--font-style-logo);
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.navbar-menu {
+    justify-content: end;
+    margin: 0 1rem;
+    gap: 2rem;
+    font-family: var(--font-style-lists);
+    font-size: 1.2rem;
+}
+
+.navbar-menu li {
+    list-style-type: none;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar-menu li a:hover {
+    color: var(--hover-color);
+    transition: 0.3s ease;
+}
+
+.toggle-button {
+    display: none;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 1.25rem;
+    padding: 1.4rem 1.5rem;
+    margin: auto 5%;
+}
+
+.toggle-button .line {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    margin-bottom: 35%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        background: transparent;
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        box-shadow: none;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar {
+        left: 0;
+        width: 100vw;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+
+    .navbar-logo {
+        background: linear-gradient(135deg,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border-radius: 1.25rem;
+        padding: 0 4rem;
+    }
+}

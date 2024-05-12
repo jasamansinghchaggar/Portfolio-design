@@ -1,0 +1,15 @@
+:root {
+    --hover-color: #000000; 
+    --text-color: #fff;
+    --font-style-logo: "Bebas Neue", sans-serif;
+    --font-style-lists:  "Oswald", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
